@@ -9,7 +9,7 @@ class Grid extends \App\Models\Base implements \MvcCore\Ext\Controllers\DataGrid
 
 	public function GetConfigColumns () {
 		$configColumns = $this->grid->ParseConfigColumns();
-		x($configColumns);
+		//x($configColumns);
 		return $configColumns;
 	}
 	public function __construct () {
@@ -46,13 +46,6 @@ class Grid extends \App\Models\Base implements \MvcCore\Ext\Controllers\DataGrid
 				->Prepare($pageDataSql)
 				->FetchAll($params)
 				->ToInstances($this->grid->GetRowClass());
-			x($this->pageData);
-
-			$dd = $this->db
-				->Prepare($pageDataSql)
-				->FetchAll($params)
-				->ToArrays();
-			x($dd);
 
 		} catch (\Throwable $e) {
 			\MvcCore\Debug::Log($e);
