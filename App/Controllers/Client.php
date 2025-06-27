@@ -11,7 +11,7 @@ use \MvcCore\Ext\Controllers\DataGrid\IConstants as GridConsts,
 
 class Client extends Base {
 
-	use \App\Controllers\TGrid;
+	use \App\Controllers\Grids\TGridController;
 
 	/** @return void */
 	public function IndexAction () {

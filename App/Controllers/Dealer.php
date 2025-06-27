@@ -8,7 +8,7 @@ use \MvcCore\Ext\Controllers\DataGrid\IConstants as GridConsts,
 
 class Dealer extends Base {
 	
-	use \App\Controllers\TGrid;
+	use \App\Controllers\Grids\TGridController;
 
 	/** @return void */
 	public function IndexAction () {

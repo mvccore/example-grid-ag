@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Grids;
 
 use \MvcCore\Ext\Controllers\DataGrids\AgGrid;
 
-trait TGrid {
+trait TGridController {
 	
 	/** @var AgGrid */
 	protected static $grid;
